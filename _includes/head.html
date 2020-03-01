@@ -2,15 +2,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <!--
-  {% if site.plugins.jekyll-seo-tag == nil %}
-    <title>{{ page.title }} - {{ site.title }}</title>
-
-    {% if page.description %}
-      <meta name="Description" content="{{ page.description }}">
-    {% endif %}
-  {% endif %}
-  -->
+  <!-- Note: SEO tag provides title -->
+  {% seo %}
 
   <link rel="shortcut icon" href="{{ 'favicon.ico' | absolute_url }}" type="image/x-icon">
 
@@ -33,9 +26,9 @@
   {% endif %}
   <script type="text/javascript" src="{{ '/assets/js/just-the-docs.js' | absolute_url }}"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {% seo %}
+
 
   {% include head_custom.html %}
 
